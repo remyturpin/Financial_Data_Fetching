@@ -1,6 +1,16 @@
-pip install streamlit 
-pip install pandas 
-numpy yfinance plotly openai alpha_vantage stocknews
+import os
+import subprocess
+import sys
+
+# Automatically install missing dependencies
+required_packages = ["streamlit", "pandas", "numpy", "yfinance", "plotly", "openai", "alpha_vantage", "stocknews"]
+
+for package in required_packages:
+    try:
+        __import__(package)
+    except ImportError:
+        print(f"Installing {package}...")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 import streamlit as st
 import pandas as pd
