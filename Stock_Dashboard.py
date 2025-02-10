@@ -1,4 +1,6 @@
-pip install streamlit pandas numpy yfinance plotly openai alpha_vantage stocknews
+pip install streamlit 
+pip install pandas 
+numpy yfinance plotly openai alpha_vantage stocknews
 
 import streamlit as st
 import pandas as pd
