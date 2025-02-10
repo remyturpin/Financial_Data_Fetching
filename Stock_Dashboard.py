@@ -23,7 +23,7 @@ from alpha_vantage.fundamentaldata import FundamentalData
 from stocknews import StockNews
 
 # Open AI Api Key
-API_KEY_OPENAI = "VOTRE_CLE_API_OPENAI"
+API_KEY_OPENAI = "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"
 openai.api_key = API_KEY_OPENAI
 
 st.title('Stock Dashboard')
