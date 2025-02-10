@@ -1,3 +1,5 @@
+pip install streamlit pandas numpy yfinance plotly openai alpha_vantage stocknews
+
 import streamlit as st
 import pandas as pd
 import numpy as np
