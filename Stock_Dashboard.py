@@ -23,7 +23,10 @@ from alpha_vantage.fundamentaldata import FundamentalData
 from stocknews import StockNews
 
 # Open AI Api Key
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+if "OPENAI_API_KEY" in st.secrets:
+    openai.api_key = st.secrets["OPENAI_API_KEY"]
+else:
+    st.error("🚨 OpenAI API Key is missing! Please set it in Streamlit Secrets.")
 
 st.title('Stock Dashboard')
 
