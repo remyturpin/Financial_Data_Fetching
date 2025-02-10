@@ -109,7 +109,7 @@ if ticker:
     # **OpenAI Analysis**
     from openai import OpenAIError
 
-    client = openai.OpenAI(api_key=API_KEY_OPENAI)
+    client = openai.OpenAI(api_key=openai.api_key)
 
     def get_openai_response(prompt):
         try:
